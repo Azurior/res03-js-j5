@@ -67,18 +67,34 @@ body header {
   display: grid;
   grid-template-columns: 0.25fr 0.75fr;
 }
-body header section {
+body header section.open {
   border-right: 1px solid black;
   display: flex;
   justify-content: center;
   padding: 0.5rem;
 }
-body header section button {
+body header section.open button {
   font-size: 3rem;
   background: none;
   border: none;
   cursor: pointer;
-  margin-right: 5rem;
+  padding-right: 10rem;
+}
+body header section.open button span {
+  color: #0077b6;
+}
+body header section:not(.open) {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+body header section:not(.open) button {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 10rem;
 }
 body header nav {
   border-bottom: 1px solid black;
@@ -122,6 +138,55 @@ body main aside.open nav ul.close {
 }
 body main aside:not(.open) {
   display: none;
+}
+body main section:first-of-type {
+  padding: 2rem;
+}
+body main section:first-of-type h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0077b6;
+  margin-bottom: 4rem;
+}
+body main section:first-of-type .add-btn {
+  background-color: #023e8a;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+body main section:last-of-type table {
+  margin-top: 4rem;
+  width: 100%;
+}
+body main section:last-of-type table thead tr {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 4rem;
+  text-align: left;
+}
+body main section:last-of-type table tbody tr {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+body main section:last-of-type table tbody tr td:last-of-type a {
+  color: #023E8A;
+}
+body main section:last-of-type table tbody tr td:last-of-type button {
+  background: none;
+  color: #b50604;
+  border: none;
+  font-size: 1.5rem;
+}
+body main section:last-of-type table tbody tr td a {
+  text-decoration: none;
+}
+body main section:last-of-type table tbody tr:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

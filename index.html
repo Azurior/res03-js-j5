@@ -24,10 +24,10 @@
     <body>
         <header>
             <h1 class="sr-only">Espace Admin</h1>
-            <section>
+            <section class="open">
                 <h2 class="sr-only">Le Logo</h2>
-                <button id="menu-btn">
-                    <span class="bi bi-arrow-left-square-fill"></span>
+                <button id="menu-btn" >
+                    <span id="span" class="bi bi-arrow-down-left-square-fill"></span>
                 </button>
                 <figure>
                     <img src="https://res03.sites.3wa.io/assets/files/js/j5/demo/assets/logo.svg">
@@ -89,7 +89,94 @@
                 </nav>
             </aside>
             <section>
-                <h3 class="sr-only">Section Vide</h3>
+                <h2>Liste des Utilisateurs</h2>
+                <section>
+                    <h3 class="sr-only">
+                        Ajout d'un utilisateur
+                    </h3>
+                    <button id="add-user" class="add-btn">
+                        <span class="bi-person-fill-add"></span>
+                        Ajouter un utilisateur
+                    </button>
+                </section>
+                <section>
+                    <h3 class="sr-only">
+                        Tableau utilisateur
+                    </h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    #
+                                </th>
+                                <th>
+                                   Nom 
+                                </th>
+                                <th>
+                                   Age 
+                                </th>
+                                <th>
+                                    Actif
+                                </th>
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    Marsh Obrien
+                                </td>
+                                <td>
+                                    24
+                                </td>
+                                <td>
+                                    <span class="bi-person-fill-down" aria-labelledby="Inactif"></span>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span>
+                                    </a>
+                                    <a href="">
+                                        <span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span>
+                                    </a>
+                                    <button class="delete-user" data-user="0">
+                                        <span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Jack Daniel
+                                </td>
+                                <td>
+                                    65
+                                </td>
+                                <td>
+                                    <span class="bi-person-fill-up" aria-labelledby="Actif"></span>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <span class="bi-eye" aria-labelledby="Voir l'utilisateur"></span>
+                                    </a>
+                                    <a href="">
+                                        <span class="bi-pen" aria-labelledby="Modifier l'utilisateur"></span>
+                                    </a>
+                                    <button class="delete-user" data-user="0">
+                                        <span class="bi-trash3" aria-labelledby="Supprimer l'utilisateur"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </section>
         </main>
         <script type="application/javascript" src="assets/js/script.js"></script>
