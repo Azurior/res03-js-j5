@@ -24,13 +24,74 @@
     <body>
         <header>
             <h1 class="sr-only">Espace Admin</h1>
-            <secton>
+            <section>
                 <h2 class="sr-only">Le Logo</h2>
+                <button id="menu-btn">
+                    <span class="bi bi-arrow-left-square-fill"></span>
+                </button>
                 <figure>
-                    
+                    <img src="https://res03.sites.3wa.io/assets/files/js/j5/demo/assets/logo.svg">
                 </figure>
-            </secton>
+            </section>
+            <nav>
+                <h2 class="sr-only">Navigation Vide</h2>
+            </nav>
         </header>
+        <main>
+            <aside class="open">
+                <nav>
+                    <h2 data-nav="user-nav">
+                        Utilisateurs
+                        <span class="bi bi-arrow-down-left-square-fill"></span>
+                    </h2>
+                    <ul class="close" data-nav="user-nav">
+                        <li>
+                            <a href="">Liste des utilisateurs</a>
+                        </li>
+                        <li>
+                            <a href="">Ajouter un utilisateur</a>
+                        </li>
+                        <li>
+                            <a href="">Statistiques Utilisateurs</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h2 data-nav="product-nav">
+                        Produits
+                        <span class="bi bi-arrow-down-left-square-fill"></span>
+                    </h2>
+                    <ul class="close" data-nav="product-nav">
+                        <li>
+                            <a href="">Liste des produits</a>
+                        </li>
+                        <li>
+                            <a href="">Ajouter un produit</a>
+                        </li>
+                        <li>
+                            <a href="">Statistiques des produits</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h2 data-nav="cat-nav">
+                        Catégories
+                        <span class="bi bi-arrow-down-left-square-fill"></span>
+                    </h2>
+                    <ul class="close" data-nav="cat-nav">
+                        <li>
+                            <a href="">Liste des catégories de produits</a>
+                        </li>
+                        <li>
+                            <a href="">ajouter une catégorie de produits</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section>
+                <h3 class="sr-only">Section Vide</h3>
+            </section>
+        </main>
         <script type="application/javascript" src="assets/js/script.js"></script>
     </body>
 </html>

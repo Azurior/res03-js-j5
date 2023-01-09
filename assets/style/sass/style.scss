@@ -8,4 +8,92 @@ body{
     .sr-only{
         display: none;
     }
+    
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    width: 100vw;
+    height: 100vh;
+    
+    header{
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.25fr 0.75fr;
+        
+        section{
+            border-right: 1px solid black;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+            
+            button{
+                font-size: 3rem;
+                background: none;
+                border: none;
+                cursor: pointer;
+                margin-right: 5rem;
+            }
+        }
+        
+        nav{
+            border-bottom: 1px solid black;
+        }
+    }
+    
+    main{
+        
+        display: grid;
+        grid-template-columns: 0.25fr 0.75fr;
+        
+        aside.open{
+            
+            border-right: 1px solid black;
+            padding: 5rem 1rem;
+            text-transform: uppercase;
+            nav{
+                
+                h2{
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin: 1rem 0;
+                    cursor: pointer;
+                }
+                
+                ul{
+                    
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    
+                    li{
+                        
+                        margin: 0.5rem 0;
+                        
+                        a{
+                            text-decoration: none;
+                        }
+                        
+                        a:visited{
+                            color: black;
+                        }
+                        
+                        a:hover{
+                            color: black;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                
+                ul.close{
+                    
+                    display: none;
+                }
+            }
+        }
+        
+        aside:not(.open){
+            display: none;
+        }
+    }
 }
